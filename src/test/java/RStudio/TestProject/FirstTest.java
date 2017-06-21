@@ -55,7 +55,7 @@ public class FirstTest {
 		country.sendKeys("USA");
 		downloadBtn.submit();
 		
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.urlContains("download-commercial"));
 		
 		assertTrue   (driver.getPageSource().contains("Download Shiny Server Pro") );
