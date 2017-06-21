@@ -1,0 +1,130 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Light;\f2\fswiss\fcharset0 ArialMT;
+}
+{\colortbl;\red255\green255\blue255;\red49\green49\blue49;\red52\green92\blue137;\red16\green60\blue192;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20340\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+\
+
+\f1 Given I am a new User\
+When I navigate to shiny-server-pro/evaluation/ page \
+Then I should see main Navigation menu which contains\
+\
+| \expnd0\expndtw0\kerning0
+rstudio::conf    |\
+| Products          |\
+| Resources       |\
+| Pricing             |\
+| About Us         |\
+| Blogs               |\
+\
+And Download section which contains \
+\
+| First Name text field                                                                                                                      |\
+| Email text filed                                                                                                                               |\
+| Country text field      								                                                  |\
+| Last Name text field                                                                                                                       |\
+| Company text field                                                                                                                          |\
+| \expnd0\expndtw0\kerning0
+By submitting this form you accept and agree to the Shiny Server Pro License Agreement  link |\
+| Privacy policy link                                                                                                                           |\
+| Download button                                                                                                                             |\expnd0\expndtw0\kerning0
+\
+\
+\
+Given I am a new User \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \kerning1\expnd0\expndtw0 When I navigate to shiny-server-pro/evaluation/ page \
+And I try to download RSSSP without  filling any personal information\
+Then I should see pop up message \'91This field is required \'91 close to First Name text field\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \expnd0\expndtw0\kerning0
+Given I am a new User \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \kerning1\expnd0\expndtw0 When I navigate to shiny-server-pro/evaluation/ page \
+And I try to download RSSSP with only fill First Name \
+Then I should see pop up \'91This field is required \'91 close to Last Name text field\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \expnd0\expndtw0\kerning0
+Given I am a new User \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \kerning1\expnd0\expndtw0 When I navigate to shiny-server-pro/evaluation/ page \
+And I try to download RSSSP with only fill First Name  and Last Name\
+Then I should see pop up \'91This field is required \'91 close to Email text field\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \expnd0\expndtw0\kerning0
+Given I am a new User \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \kerning1\expnd0\expndtw0 When I navigate to shiny-server-pro/evaluation/ page \
+And I try to download RSSSP with only fill First Name, Last Name and email\
+Then I should see pop up \'91This field is required \'91 close to Company text field\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \expnd0\expndtw0\kerning0
+Given I am a new User \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \kerning1\expnd0\expndtw0 When I navigate to shiny-server-pro/evaluation/ page \
+And I try to download RSSSP with only fill First Name, Last Name, email and Company name\
+Then I should see pop up \'91This field is required \'91 close to Country text field\
+\
+Given I am a new User \
+When I navigate to shiny-server-pro/evaluation/ page \
+And I try to download RSSSP with correctly filling First Name, Last Name, email,Company name and Country\
+Then I should be redirected to {\field{\*\fldinst{HYPERLINK "https://www.rstudio.com/products/shiny/download-commercial/"}}{\fldrslt 
+\fs26 \expnd0\expndtw0\kerning0
+shiny/download-commercial/}}
+\fs26 \expnd0\expndtw0\kerning0
+ \
+
+\fs24 And I have possibility to download software on any of supported distributions
+\f2\fs26 \ul \
+
+\f1\fs24 \kerning1\expnd0\expndtw0 \ulnone \
+Given I am a new User\
+When I navigate to shiny-server-pro/evaluation/ page \
+And I click on the Privacy Policy link\
+Then I should be redirected to the Privacy Policy page\
+\
+Given I am a new User\
+When I navigate to shiny-server-pro/evaluation/ page\
+Then I should see \cf2 \expnd0\expndtw0\kerning0
+Enterprise Performance, Security, & Support section\
+\
+\cf0 \kerning1\expnd0\expndtw0 Given I am a new User\
+When I navigate to shiny-server-pro/evaluation/ page\
+Then I should see Download a 45-Day Free Trial (no restrictions) image\
+\
+Given I am a new User\
+When I navigate to shiny-server-pro/evaluation/ page\
+Then I should see client\'92s logos \
+\
+\
+// Based on the current situation there are no verifications for the correctness of filling values like i can add any value to the email field and country field. But I created some test cases for it.\
+\
+Given I am a new User\
+When I navigate to shiny-server-pro/evaluation/ page\
+And enter in the email text field <value>\
+Then I should see error message\
+\
+| <value>    |\
+| asassas    |\
+| dfdfd@      |\
+| fgfg.com   |  \
+| @hjh.com  |\
+\
+Given I am a new User\
+When I navigate to shiny-server-pro/evaluation/ page\
+And enter in the country text field <value>\
+Then I should see error message\
+\
+| <value> |\
+| ghghh    |\
+| USAAA  |\
+| _USA     | \
+}
