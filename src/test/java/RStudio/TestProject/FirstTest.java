@@ -55,32 +55,14 @@ public class FirstTest {
 		country.sendKeys("USA");
 		downloadBtn.submit();
 		
-		//WebDriverWait _wait = new WebDriverWait(driver, new TimeSpan(0, 1, 0));
-
-		//_wait.Until(d => d.FindElement(By.Id("Id_Your_UIElement"));
-		
-		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
-		
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.urlContains("download-commercial"));
 		
-		//System.out.println("URL" + driver.getCurrentUrl());
-		//System.out.println("TITLE" + driver.getTitle());
 		assertTrue   (driver.getPageSource().contains("Download Shiny Server Pro") );
 		assertTrue   (driver.getPageSource().contains("Thank you for your interest in Shiny Server Pro.") );
 		assertEquals (driver.getTitle(), "Download Commercial Shiny – RStudio");
 		assertEquals (driver.getCurrentUrl(), "https://www.rstudio.com/products/shiny/download-commercial/");
 		
-		
-
-		
-		
-//		assertTrue ("The page title should start with the search string after the search.", (new WebDriverWait(driver, 10)).until(new ExpectedCondition() {
-//			        public Boolean apply(WebDriver d) {
-//			          return d.getTitle().toLowerCase().startsWith("drupal!");
-//			        }
-//			      });
 	}
 	
 	@After
